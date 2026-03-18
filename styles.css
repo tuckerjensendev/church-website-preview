@@ -214,13 +214,18 @@ main {
 .split-copy p,
 .timeline-copy p,
 .closing-copy p,
-.site-footer p,
-.site-footer li,
 .hero-card p,
 .contact-grid p {
   font-size: 1.02rem;
   line-height: 1.8;
   color: var(--muted);
+}
+
+.hero-copy p,
+.hero-card p,
+.split-copy p,
+.closing-copy p {
+  max-width: 42rem;
 }
 
 .hero-actions,
@@ -309,6 +314,7 @@ main {
 .site-footer h2 {
   margin: 0 0 0.85rem;
   font-size: clamp(1.5rem, 3vw, 2.3rem);
+  line-height: 1.08;
 }
 
 .check-list,
@@ -352,6 +358,10 @@ main {
   background: rgba(255, 250, 244, 0.84);
   border: 1px solid rgba(35, 31, 32, 0.08);
   box-shadow: var(--shadow);
+}
+
+.page-intro {
+  max-width: 60rem;
 }
 
 .feature-grid,
@@ -409,7 +419,7 @@ main {
 .visual-card {
   padding: 1rem 1.1rem;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.78);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 248, 240, 0.72));
   border: 1px solid rgba(35, 31, 32, 0.08);
 }
 
@@ -482,6 +492,25 @@ main {
   padding: 3rem 1.4rem;
   background: linear-gradient(180deg, rgba(21, 31, 39, 0.98), rgba(31, 41, 51, 0.98));
   color: #f4eee7;
+}
+
+.site-footer p,
+.site-footer li {
+  color: rgba(244, 238, 231, 0.78);
+}
+
+.site-footer a {
+  color: #fff6ee;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #ffffff;
+}
+
+.site-footer .action-link--outline {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .footer-grid {
