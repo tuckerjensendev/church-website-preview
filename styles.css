@@ -269,6 +269,9 @@ main {
   padding: 0;
   border-radius: 0;
   color: var(--primary);
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 1rem;
 }
 
 .action-link--text::after {
@@ -374,6 +377,9 @@ main {
 
 .feature-card,
 .contact-grid article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 1.5rem;
 }
 
